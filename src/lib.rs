@@ -55,7 +55,7 @@ pub enum Operation {
 }
 
 /// Cross-chain messages for oracle broadcasts
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub enum Message {
     /// Broadcast sentiment update to all subscribed chains
     SentimentUpdate {
